@@ -14,10 +14,19 @@ Entrenar un modelo de Machine Learning capaz de analizar comentarios de usuarios
 ## 🛠 Metodología y Tecnologías
 Se construyó un pipeline de NLP para transformar lenguaje humano en matrices matemáticas operables.
 * **Vectorización:** TF-IDF (Term Frequency-Inverse Document Frequency) para asignar pesos relativos a las palabras según su importancia.
-* **Modelo Analítico:** Clasificador Naive Bayes (MultinomialNB), ideal para cálculo de probabilidades probabilísticas en texto.
+* **Modelo Analítico:** Clasificador Naive Bayes (MultinomialNB), ideal para el cálculo de probabilidades en procesamiento de texto.
 * **Librerías:** Pandas, Scikit-Learn.
 
 ## 🧠 Resultados y Aplicación de Negocio
-El algoritmo demostró capacidad para interpretar contextos mixtos. En pruebas en vivo, logró diagnosticar correctamente opiniones donde existían elementos positivos ("el envío fue rápido") pero que concluían en un estado de insatisfacción ("producto roto"), categorizándolo exitosamente como 'Negativo'. 
+Durante la fase de evaluación con datos no vistos previamente (Test Set), el motor algorítmico alcanzó un **nivel de precisión del [XX.X]%**.
 
-Este desarrollo está listo para ser acoplado a flujos de web scraping o bases de datos de encuestas NPS para automatizar el monitoreo de la experiencia del cliente.
+Además, el algoritmo demostró una alta capacidad para interpretar contextos mixtos. En pruebas en vivo, logró diagnosticar correctamente opiniones desafiantes:
+
+* **Comentario:** *"El envío fue rápido, pero el producto llegó totalmente roto."*
+  * **Diagnóstico IA:** `Negativo` (Comprende que el defecto final anula lo positivo del envío).
+* **Comentario:** *"¡Me fascina! Lo volvería a comprar mil veces más, recomendado."*
+  * **Diagnóstico IA:** `Positivo`
+* **Comentario:** *"Es un artículo promedio, hace su trabajo sin destacar."*
+  * **Diagnóstico IA:** `Neutro`
+
+Este desarrollo está listo para ser acoplado a flujos de web scraping o bases de datos de encuestas NPS para automatizar el monitoreo continuo de la experiencia del cliente.
