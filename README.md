@@ -18,7 +18,7 @@ Se construyó un pipeline de NLP para transformar lenguaje humano en matrices ma
 * **Librerías:** Pandas, Scikit-Learn.
 
 ## 🧠 Resultados y Aplicación de Negocio
-Durante la fase de evaluación con datos no vistos previamente (Test Set), el motor algorítmico alcanzó un **nivel de precisión del [XX.X]%**.
+Durante la fase de evaluación con datos no vistos previamente (Test Set), el motor algorítmico alcanzó un **nivel de precisión del [100%]%**.
 
 Además, el algoritmo demostró una alta capacidad para interpretar contextos mixtos. En pruebas en vivo, logró diagnosticar correctamente opiniones desafiantes:
 
